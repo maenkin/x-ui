@@ -141,3 +141,18 @@ x-ui v2-ui
 ## Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/vaxilu/x-ui.svg)](https://starchart.cc/vaxilu/x-ui)
+
+Script setup x-ui
+
+## setup 
+
+- apt update
+- apt upgrade -y
+- apt install curl -y
+- bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+
+## Install Certificate
+
+- apt install software-properties-common -y
+- apt install certbot -y
+- certbot certonly --standalone --preferred-challenges http --agree-tos --email email@outlook.com -d webiot.live
